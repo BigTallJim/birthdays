@@ -9,6 +9,6 @@ describe Birthday do
     subject.saveFriend("Person2", "25/08/1974")
     subject.saveFriend("James", "26/08/1974")
     subject.saveFriend("Person3", "27/08/1974")
-    expect(subject.birthdays_today).to eq("It's James's Birthday today")
+    expect(subject.birthdays_today).to eq(["It's James's Birthday today"])
   end
 end
